@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<students>
+    <student>
+        <lastName>Sergeev</lastName>
+        <firstName>Vasya</firstName>
+        <birthDate>1995-01-12</birthDate>
+    </student>
+    <student>
+        <lastName>Matveev</lastName>
+        <firstName>Petya</firstName>
+        <birthDate>1992-05-10</birthDate>
+    </student>
+    <student>
+        <lastName>Petrov</lastName>
+        <firstName>Ilya</firstName>
+        <birthDate>1980-10-01</birthDate>
+    </student>
+    <student>
+        <lastName>Sidorov</lastName>
+        <firstName>Andrey</firstName>
+        <birthDate>1981-05-01</birthDate>
+    </student>
+</students>

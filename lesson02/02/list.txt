@@ -1,0 +1,4 @@
+Pupkin;Vasya;1990-01-12
+Ivanov;Petya;1992-05-10
+Petrov;Ilya;1980-10-01
+Sidorov;Andrey;1981-05-01

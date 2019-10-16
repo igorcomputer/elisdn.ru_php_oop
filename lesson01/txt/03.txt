@@ -1,0 +1,28 @@
+var
+    i: integer;
+    firstName: array[1..5] of string[30];
+    lastName: array[1..5] of string[30];
+    birthDate: array[1..5] of string[10];
+
+function getFullName(lastName, firstName): string[61];
+begin
+    getFullName := lastName + ' ' + firstName;
+end;
+
+begin
+
+    firstName[1] := 'Vasya';
+    lastName[1] := 'Pupkin';
+    birthDate[1] := '1990-01-23';
+
+    firstName[2] := 'Petya';
+    lastName[2] := 'Ivanov';
+    birthDate[2] := '1961-01-23';
+
+    ...
+
+    for i := 1 to 5 do begin
+        writeln( getFullName(lastName[i], firstName[i]) );
+    end;
+
+end.

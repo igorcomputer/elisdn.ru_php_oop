@@ -1,0 +1,7 @@
+var
+    name: string[30];
+
+begin
+    name := 'Vasya';
+    writeln(name);
+end.

@@ -1,0 +1,27 @@
+- Взгляд на объект со стороны
+- Давать ли прямой доступ к свойствам
+- Создание и обработка событий (Event)
+- Использование исключений (Exception)
+
+- Как не превратить проект в хаос
+- Делаем однонаправленные зависимости
+
+             UserSignupEvent
+             public $user;
+      ----- [     ] -----
+     /       /   \        \
+    /       /     \        \
+   /       /       \        \
+[user]   [   ]    [   ]   [shop buyer].addBuyer($event->user->email, $event->user->name)
+
+
+- Связи между уровнями абстракции
+
+                                                                               /--- Db
+              ------  Cart ------ StorageInterface (load() save())             ---- $_SESSION['cart']
+             /
+ShopService  -------  MailerInterface send($email, $message)                   -----  new SwiftMailer(...)
+            \                                                                  \----- mail($email)
+             \
+              ------  SmsSenderInterface send($phone, $message)                --- new MTSSender { new SoapClient($wsdl) }
+                                                                               \-- new MegafonSender ( ... }

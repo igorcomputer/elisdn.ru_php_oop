@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "psr-4": {
+            "lesson04\\example04\\": "../"
+        }
+    },
+    "require": {
+        "pimple/pimple": "~3.0"
+    }
+}

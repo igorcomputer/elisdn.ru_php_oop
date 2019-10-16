@@ -1,0 +1,14 @@
+var
+    firstName: string[30];
+    lastName: string[30];
+    birthDate: string[10];
+
+begin
+
+    firstName := 'Vasya';
+    lastName := 'Pupkin';
+    birthDate := '1990-01-23';
+
+    writeln( lastName + ' ' + firstName );
+
+end.

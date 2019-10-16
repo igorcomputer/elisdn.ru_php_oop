@@ -1,0 +1,28 @@
+###############################
+
+public class Main
+{
+    public Main() {
+        Canvas c = new Canvas();
+        Point p = new DecartPoint(5, 4, 6);
+        c.paint(p);
+    }
+}
+
+public class DecartPoint implements Point {
+    private int x;
+    private int y;
+    private int z;
+    ...
+}
+
+###############################
+
+public interface Point {
+    ...
+}
+public class Canvas {
+    ...
+}
+
+##############################

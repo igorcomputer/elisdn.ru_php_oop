@@ -1,0 +1,93 @@
+Что важно для заказчика
+Что важно для программиста
+Плюсы и минусы ActiveRecord и CRUD
+
+Куда поместить бизнес-логику... и прочие вещи
+
+=========
+
+- огромные модели
+- сложные правила валидации на все случаи жизни
+- сложные контроллеры
+- нетестируемый код
+
+=========
+
+1 \           / 1
+2 -  save()   - 2
+3 /           \ 3
+
+=========
+
+CRUD
+
+Сотрудники
+	- Создать
+	- Редактировать
+	- Удалить
+
+Собеседования
+	- Создать
+	- Редактировать
+	- Удалить
+
+========
+
+- Пригласить на собеседование
+- Пройти собеседование
+- Отклонить собеседование
+- Принять сотрудника
+- Назначить сотрудника
+- Отправить в отпуск
+- Назначить премию
+- Уволить
+
+=========
+
+1 -   join()   - 1
+2 -   edit()   - 2
+3 -   move()   - 3
+4 -   pass()   - 4
+5 -   reject() - 5
+
+=========
+
+- Пригласить на собеседование    $interview = Interview::join($date, $lastName, $firstName, $email)
+
+                                 class InterviewJoinForm extends Model
+                                 {
+                                     public $date;
+                                     public $lastName;
+                                     public $firstName;
+                                     public $email;
+
+                                     public function rules() {
+                                         return [
+                                             [['date', 'lastName', 'firstName', 'email'], 'required']
+                                         ];
+                                     }
+                                 }
+
+- Пройти собеседование           $employee = Employee::create(...)
+                                 $interview->passBy($employee)
+
+- Отклонить собеседование        $interview->reject($reason)
+
+                                 class InterviewRejectForm extends Model
+                                 {
+                                     public $reason;
+
+                                     public function rules() {
+                                         return [
+                                             ['reason' , 'required']
+                                         ];
+                                     }
+                                 }
+
+- Принять сотрудника             $employee = Employee::create(...)
+
+- Назначить сотрудника           $assignment = Assignment::assign($emplyee, $position, $date)
+
+- Отправить в отпуск
+- Назначить премию
+- Уволить

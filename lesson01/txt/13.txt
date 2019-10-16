@@ -1,0 +1,44 @@
+type
+    Student = object
+        firstName: string[30];
+        lastName: string[30];
+        birthDate: string[10];
+        function getFullName(): string[61];
+    end;
+
+    function Student.getFullName(): string[61];
+    begin
+        getFullName := lastName + ' ' + firstName;
+    end;
+
+var
+    a: integer;
+    b: string[10];
+    student: ^Student;
+
+begin
+
+    GetMem(student, SizeOf(Student));
+
+    student^.firstName := 'Vasya';
+    student^.lastName := 'Pupkin';
+    student^.birthDate := '1990-01-23';
+
+    writeln( student^.getFullName() );
+
+    FreeMem(student);
+
+end.
+
+
+###########################
+[ 5 ][     Vasya     ][ @ ]
+###########################
+
+##########################################################
+
+[                 Student#1 (2)                ]
+[                 Student#2 (5)                ]
+
+##########################################################
+ 

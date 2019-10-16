@@ -1,0 +1,34 @@
+###############################
+
+import ru.elisdn.canvas.Canvas;
+import ru.elisdn.canvas.Point;
+import com.google.canvas.Canvas;
+import geometry.Point;
+
+public class Main
+{
+    public Main() {
+        ru.elisdn.canvas.Canvas c = new ru.elisdn.canvas.Canvas();
+        com.google.canvas.Canvas d = new com.google.canvas.Canvas();
+    }
+}
+
+public class DecartPoint extends canvas.Point {
+    private int x;
+    private int y;
+    private int z;
+    ...
+}
+
+###############################
+
+package ru.elisdn.canvas;
+
+public interface Point {
+    ...
+}
+public class Canvas {
+    ...
+}
+
+##############################

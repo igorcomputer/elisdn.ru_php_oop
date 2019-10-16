@@ -1,0 +1,25 @@
+type
+    Student = object
+        firstName: string[30];
+        lastName: string[30];
+        birthDate: string[10];
+        function getFullName(): string[61];
+    end;
+
+    function Student.getFullName(): string[61];
+    begin
+        getFullName := lastName + ' ' + firstName;
+    end;
+
+var
+    students: array[0..1000000] of Student;
+
+begin
+
+    students[500].firstName := 'Vasya';
+    students[500].lastName := 'Pupkin';
+    students[500].birthDate := '1990-01-23';
+
+    writeln( students[500].getFullName() );
+
+end.

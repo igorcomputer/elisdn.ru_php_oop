@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metrics generated="2016-12-06T20:30:15" pdepend="2.3.2" ahh="0.13333333333333" andc="0" calls="56" ccn="59" ccn2="59" cloc="19" clsa="0" clsc="15" eloc="376" fanout="14" leafs="14" lloc="205" loc="479" maxDIT="2" ncloc="460" noc="15" nof="0" noi="2" nom="44" nop="3" roots="1">
+  <files>
+    <file name="/home/elisdn/oop/lesson04/02/demo09/cart/Cart.php" loc="68" cloc="1" eloc="55" lloc="33" ncloc="67"/>
+    <file name="/home/elisdn/oop/lesson04/02/demo09/cart/CartItem.php" loc="37" cloc="0" eloc="30" lloc="16" ncloc="37"/>
+    <file name="/home/elisdn/oop/lesson04/02/demo09/cart/cost/BigCost.php" loc="27" cloc="0" eloc="23" lloc="13" ncloc="27"/>
+    <file name="/home/elisdn/oop/lesson04/02/demo09/cart/cost/BirthdayCost.php" loc="30" cloc="0" eloc="26" lloc="16" ncloc="30"/>
+    <file name="/home/elisdn/oop/lesson04/02/demo09/cart/cost/FourCost.php" loc="27" cloc="0" eloc="22" lloc="12" ncloc="27"/>
+    <file name="/home/elisdn/oop/lesson04/02/demo09/cart/cost/FridayCost.php" loc="27" cloc="0" eloc="23" lloc="13" ncloc="27"/>
+    <file name="/home/elisdn/oop/lesson04/02/demo09/cart/cost/MinCost.php" loc="31" cloc="3" eloc="24" lloc="13" ncloc="28"/>
+    <file name="/home/elisdn/oop/lesson04/02/demo09/cart/cost/NewYearCost.php" loc="27" cloc="0" eloc="23" lloc="13" ncloc="27"/>
+    <file name="/home/elisdn/oop/lesson04/02/demo09/cart/cost/SimpleCost.php" loc="15" cloc="0" eloc="13" lloc="6" ncloc="15"/>
+    <file name="/home/elisdn/oop/lesson04/02/demo09/cart/storage/HybridStorage.php" loc="26" cloc="0" eloc="21" lloc="11" ncloc="26"/>
+    <file name="/home/elisdn/oop/lesson04/02/demo09/cart/storage/SessionStorage.php" loc="23" cloc="0" eloc="18" lloc="8" ncloc="23"/>
+    <file name="/home/elisdn/oop/lesson04/02/demo09/cart/storage/YiiDbStorage.php" loc="47" cloc="5" eloc="34" lloc="15" ncloc="42"/>
+    <file name="/home/elisdn/oop/lesson04/02/demo09/cart/storage/YiiHybridStorage.php" loc="37" cloc="0" eloc="30" lloc="17" ncloc="37"/>
+    <file name="/home/elisdn/oop/lesson04/02/demo09/cart/storage/YiiSessionStorage.php" loc="25" cloc="0" eloc="19" lloc="9" ncloc="25"/>
+  </files>
+  <package name="lesson04\example02\demo09\cart" noc="2" noi="0" nom="13" nof="0" cr="0.15" rcr="0.15">
+    <class name="Cart" start="8" end="68" loc="61" cloc="1" eloc="37" lloc="19" ncloc="60" dit="0" noam="0" nocc="0" noom="0" nom="8" cr="0.15" rcr="0.15" ca="0" cbo="3" ce="3" impl="0" cis="6" csz="11" npm="6" vars="3" varsi="3" varsnp="0" wmc="11" wmci="11" wmcnp="8">
+      <file name="/home/elisdn/oop/lesson04/02/demo09/cart/Cart.php"/>
+      <method name="__construct" start="16" end="20" ccn="1" ccn2="1" loc="5" cloc="0" eloc="4" lloc="2" ncloc="5" npath="1" hnt="8" hnd="10" hv="26.575424759099" hd="3" hl="0.33333333333333" he="79.726274277297" ht="4.4292374598498" hb="0.0061746601349011" hi="8.8584749196996" mi="76.757952883514"/>
+      <method name="getItems" start="22" end="26" ccn="1" ccn2="1" loc="5" cloc="0" eloc="4" lloc="2" ncloc="5" npath="1" hnt="7" hnd="8" hv="21" hd="7.5" hl="0.13333333333333" he="157.5" ht="8.75" hb="0.0097214814250369" hi="2.8" mi="77.473985189296"/>
+      <method name="add" start="28" end="34" ccn="2" ccn2="2" loc="7" cloc="0" eloc="6" lloc="4" ncloc="7" npath="2" hnt="20" hnd="36" hv="103.39850002885" hd="7" hl="0.14285714285714" he="723.78950020192" ht="40.210527788996" hb="0.02687119193647" hi="14.771214289835" mi="68.65077557311"/>
+      <method name="remove" start="36" end="43" ccn="2" ccn2="2" loc="8" cloc="0" eloc="7" lloc="4" ncloc="8" npath="2" hnt="13" hnd="21" hv="57.100126496124" hd="8" hl="0.125" he="456.80101196899" ht="25.377833998277" hb="0.01977106740989" hi="7.1375158120155" mi="68.996060034437"/>
+      <method name="clear" start="45" end="49" ccn="1" ccn2="1" loc="5" cloc="0" eloc="4" lloc="2" ncloc="5" npath="1" hnt="8" hnd="9" hv="25.359400011539" hd="10.5" hl="0.095238095238095" he="266.27370012115" ht="14.792983340064" hb="0.013796351820766" hi="2.4151809534799" mi="76.900382516713"/>
+      <method name="getCost" start="51" end="55" ccn="1" ccn2="1" loc="5" cloc="0" eloc="4" lloc="2" ncloc="5" npath="1" hnt="8" hnd="10" hv="26.575424759099" hd="5.8333333333333" hl="0.17142857142857" he="155.02331109474" ht="8.6124061719302" hb="0.0096192988542301" hi="4.5557871015598" mi="76.757952883514"/>
+      <method name="loadItems" start="57" end="62" ccn="2" ccn2="2" loc="6" cloc="0" eloc="5" lloc="2" ncloc="6" npath="2" hnt="10" hnd="12" hv="35.849625007212" hd="7" hl="0.14285714285714" he="250.94737505048" ht="13.941520836138" hb="0.013261740231565" hi="5.1213750010302" mi="73.599165884488"/>
+      <method name="saveItems" start="64" end="67" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+    </class>
+    <class name="CartItem" start="5" end="37" loc="33" cloc="0" eloc="17" lloc="7" ncloc="33" dit="0" noam="0" nocc="0" noom="0" nom="5" cr="0.15" rcr="0.15" ca="4" cbo="0" ce="0" impl="0" cis="5" csz="8" npm="5" vars="3" varsi="3" varsnp="0" wmc="5" wmci="5" wmcnp="5">
+      <file name="/home/elisdn/oop/lesson04/02/demo09/cart/CartItem.php"/>
+      <method name="__construct" start="11" end="16" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="3" ncloc="6" npath="1" hnt="10" hnd="14" hv="38.073549220576" hd="2.6666666666667" hl="0.375" he="101.5294645882" ht="5.6405258104557" hb="0.0072544887115339" hi="14.277580957716" mi="73.550644962182"/>
+      <method name="getId" start="18" end="21" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getCount" start="23" end="26" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getPrice" start="28" end="31" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getCost" start="33" end="36" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+    </class>
+  </package>
+  <package name="lesson04\example02\demo09\cart\cost" noc="7" noi="1" nom="14" nof="0" cr="0.15" rcr="0.15">
+    <class name="BigCost" start="5" end="27" loc="23" cloc="0" eloc="13" lloc="7" ncloc="23" dit="0" noam="0" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.16821428571429" ca="0" cbo="0" ce="0" impl="1" cis="2" csz="5" npm="2" vars="3" varsi="3" varsnp="0" wmc="3" wmci="3" wmcnp="3">
+      <file name="/home/elisdn/oop/lesson04/02/demo09/cart/cost/BigCost.php"/>
+      <method name="__construct" start="11" end="16" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="3" ncloc="6" npath="1" hnt="10" hnd="14" hv="38.073549220576" hd="2.6666666666667" hl="0.375" he="101.5294645882" ht="5.6405258104557" hb="0.0072544887115339" hi="14.277580957716" mi="73.550644962182"/>
+      <method name="getCost" start="18" end="26" ccn="2" ccn2="2" loc="9" cloc="0" eloc="8" lloc="4" ncloc="9" npath="2" hnt="18" hnd="27" hv="85.587975038942" hd="9.35" hl="0.10695187165775" he="800.24756661411" ht="44.458198145228" hb="0.028731721851494" hi="9.153794121812" mi="66.500242159077"/>
+    </class>
+    <class name="BirthdayCost" start="5" end="30" loc="26" cloc="0" eloc="15" lloc="9" ncloc="26" dit="0" noam="0" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.16821428571429" ca="0" cbo="1" ce="1" impl="1" cis="2" csz="6" npm="2" vars="4" varsi="4" varsnp="0" wmc="3" wmci="3" wmcnp="3">
+      <file name="/home/elisdn/oop/lesson04/02/demo09/cart/cost/BirthdayCost.php"/>
+      <method name="__construct" start="12" end="18" ccn="1" ccn2="1" loc="7" cloc="0" eloc="6" lloc="4" ncloc="7" npath="1" hnt="12" hnd="18" hv="50.039100017308" hd="2.5" hl="0.4" he="125.09775004327" ht="6.9498750024039" hb="0.0083376772136711" hi="20.015640006923" mi="70.992346291003"/>
+      <method name="getCost" start="20" end="29" ccn="2" ccn2="2" loc="10" cloc="0" eloc="9" lloc="5" ncloc="10" npath="2" hnt="28" hnd="48" hv="156.37895002019" hd="10.684210526316" hl="0.0935960591133" he="1670.7856239" ht="92.821423549997" hb="0.046934539932215" hi="14.636453450166" mi="63.551517110835"/>
+    </class>
+    <class name="FourCost" start="5" end="27" loc="23" cloc="0" eloc="14" lloc="8" ncloc="23" dit="0" noam="0" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.16821428571429" ca="0" cbo="0" ce="0" impl="1" cis="2" csz="3" npm="2" vars="1" varsi="1" varsnp="0" wmc="4" wmci="4" wmcnp="4">
+      <file name="/home/elisdn/oop/lesson04/02/demo09/cart/cost/FourCost.php"/>
+      <method name="__construct" start="9" end="12" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+      <method name="getCost" start="14" end="26" ccn="3" ccn2="3" loc="13" cloc="0" eloc="11" lloc="7" ncloc="13" npath="3" hnt="24" hnd="37" hv="125.02688077509" hd="10.266666666667" hl="0.097402597402597" he="1283.609309291" ht="71.311628293943" hb="0.039370172474041" hi="12.177942932639" mi="62.19634329045"/>
+    </class>
+    <class name="FridayCost" start="5" end="27" loc="23" cloc="0" eloc="13" lloc="7" ncloc="23" dit="0" noam="0" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.16821428571429" ca="0" cbo="1" ce="1" impl="1" cis="2" csz="5" npm="2" vars="3" varsi="3" varsnp="0" wmc="3" wmci="3" wmcnp="3">
+      <file name="/home/elisdn/oop/lesson04/02/demo09/cart/cost/FridayCost.php"/>
+      <method name="__construct" start="11" end="16" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="3" ncloc="6" npath="1" hnt="10" hnd="14" hv="38.073549220576" hd="2.6666666666667" hl="0.375" he="101.5294645882" ht="5.6405258104557" hb="0.0072544887115339" hi="14.277580957716" mi="73.550644962182"/>
+      <method name="getCost" start="18" end="26" ccn="2" ccn2="2" loc="9" cloc="0" eloc="8" lloc="4" ncloc="9" npath="2" hnt="26" hnd="37" hv="135.44578750635" hd="11.5" hl="0.08695652173913" he="1557.6265563231" ht="86.534808684614" hb="0.044790678427196" hi="11.77789456577" mi="65.104371573619"/>
+    </class>
+    <class name="MinCost" start="5" end="31" loc="27" cloc="3" eloc="16" lloc="9" ncloc="24" dit="0" noam="0" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.16821428571429" ca="0" cbo="1" ce="1" impl="1" cis="2" csz="3" npm="2" vars="1" varsi="1" varsnp="0" wmc="5" wmci="5" wmcnp="5">
+      <file name="/home/elisdn/oop/lesson04/02/demo09/cart/cost/MinCost.php"/>
+      <method name="__construct" start="12" end="21" ccn="3" ccn2="3" loc="10" cloc="0" eloc="9" lloc="5" ncloc="10" npath="3" hnt="19" hnd="28" hv="91.339743519094" hd="10.8" hl="0.092592592592593" he="986.46923000622" ht="54.803846111457" hb="0.033031967364953" hi="8.4573836591754" mi="65.052113829436"/>
+      <method name="getCost" start="23" end="30" ccn="2" ccn2="2" loc="8" cloc="0" eloc="7" lloc="4" ncloc="8" npath="2" hnt="15" hnd="23" hv="67.853429340855" hd="8.4375" hl="0.11851851851852" he="572.51331006347" ht="31.806295003526" hb="0.022982775271347" hi="8.0418879218791" mi="68.471366058371"/>
+    </class>
+    <class name="NewYearCost" start="5" end="27" loc="23" cloc="0" eloc="13" lloc="7" ncloc="23" dit="0" noam="0" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.16821428571429" ca="0" cbo="0" ce="0" impl="1" cis="2" csz="5" npm="2" vars="3" varsi="3" varsnp="0" wmc="3" wmci="3" wmcnp="3">
+      <file name="/home/elisdn/oop/lesson04/02/demo09/cart/cost/NewYearCost.php"/>
+      <method name="__construct" start="11" end="16" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="3" ncloc="6" npath="1" hnt="10" hnd="14" hv="38.073549220576" hd="2.6666666666667" hl="0.375" he="101.5294645882" ht="5.6405258104557" hb="0.0072544887115339" hi="14.277580957716" mi="73.550644962182"/>
+      <method name="getCost" start="18" end="26" ccn="2" ccn2="2" loc="9" cloc="0" eloc="8" lloc="4" ncloc="9" npath="2" hnt="20" hnd="28" hv="96.147098441152" hd="10.8" hl="0.092592592592593" he="1038.3886631644" ht="57.688259064691" hb="0.034181047718671" hi="8.9025091149215" mi="66.146476429914"/>
+    </class>
+    <class name="SimpleCost" start="5" end="15" loc="11" cloc="0" eloc="7" lloc="4" ncloc="11" dit="0" noam="0" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.16821428571429" ca="0" cbo="0" ce="0" impl="1" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="/home/elisdn/oop/lesson04/02/demo09/cart/cost/SimpleCost.php"/>
+      <method name="getCost" start="7" end="14" ccn="2" ccn2="2" loc="8" cloc="0" eloc="7" lloc="4" ncloc="8" npath="2" hnt="14" hnd="19" hv="59.47098518821" hd="7.7142857142857" hl="0.12962962962963" he="458.77617145191" ht="25.487565080662" hb="0.019828018426675" hi="7.7092017836569" mi="68.872348027348"/>
+    </class>
+  </package>
+  <package name="lesson04\example02\demo09\cart\storage" noc="6" noi="1" nom="17" nof="0" cr="0.15" rcr="0.2775">
+    <class name="HybridStorage" start="5" end="26" loc="22" cloc="0" eloc="12" lloc="6" ncloc="22" dit="0" noam="0" nocc="0" noom="0" nom="3" cr="0.15" rcr="0.1755" ca="0" cbo="0" ce="0" impl="1" cis="3" csz="4" npm="3" vars="1" varsi="1" varsnp="0" wmc="3" wmci="3" wmcnp="3">
+      <file name="/home/elisdn/oop/lesson04/02/demo09/cart/storage/HybridStorage.php"/>
+      <method name="__construct" start="9" end="15" ccn="1" ccn2="1" loc="7" cloc="0" eloc="6" lloc="4" ncloc="7" npath="1" hnt="15" hnd="24" hv="68.774437510817" hd="5.8333333333333" hl="0.17142857142857" he="401.1842188131" ht="22.288012156283" hb="0.018131816115033" hi="11.789903573283" mi="70.025245340605"/>
+      <method name="load" start="17" end="20" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="12.5" hl="0.08" he="193.87218755409" ht="10.770677086338" hb="0.011165780490257" hi="1.2407820003462" mi="81.120955834208"/>
+      <method name="save" start="22" end="25" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+    </class>
+    <class name="SessionStorage" start="5" end="23" loc="19" cloc="0" eloc="9" lloc="3" ncloc="19" dit="0" noam="0" nocc="0" noom="0" nom="3" cr="0.15" rcr="0.1755" ca="0" cbo="0" ce="0" impl="1" cis="3" csz="4" npm="3" vars="1" varsi="1" varsnp="0" wmc="4" wmci="4" wmcnp="4">
+      <file name="/home/elisdn/oop/lesson04/02/demo09/cart/storage/SessionStorage.php"/>
+      <method name="__construct" start="9" end="12" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+      <method name="load" start="14" end="17" ccn="2" ccn2="2" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="2" hnt="11" hnd="16" hv="44" hd="8.8" hl="0.11363636363636" he="387.2" ht="21.511111111111" hb="0.017707978161273" hi="5" mi="77.815611010059"/>
+      <method name="save" start="19" end="22" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="10" hnd="10" hv="33.219280948874" hd="4.5" hl="0.22222222222222" he="149.48676426993" ht="8.3048202372184" hb="0.0093888825486208" hi="7.382062433083" mi="78.804796805669"/>
+    </class>
+    <class name="YiiDbStorage" start="8" end="37" loc="30" cloc="0" eloc="20" lloc="8" ncloc="30" dit="0" noam="0" nocc="0" noom="0" nom="3" cr="0.15" rcr="0.1755" ca="1" cbo="2" ce="2" impl="1" cis="3" csz="4" npm="3" vars="1" varsi="1" varsnp="0" wmc="5" wmci="5" wmcnp="5">
+      <file name="/home/elisdn/oop/lesson04/02/demo09/cart/storage/YiiDbStorage.php"/>
+      <method name="__construct" start="12" end="15" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+      <method name="load" start="17" end="24" ccn="2" ccn2="2" loc="8" cloc="0" eloc="7" lloc="4" ncloc="8" npath="2" hnt="18" hnd="30" hv="88.324030720953" hd="8.6363636363636" hl="0.11578947368421" he="762.79844713551" ht="42.377691507528" hb="0.027828210434041" hi="10.226993030847" mi="67.669585991562"/>
+      <method name="save" start="26" end="36" ccn="2" ccn2="2" loc="11" cloc="0" eloc="10" lloc="3" ncloc="11" npath="2" hnt="20" hnd="38" hv="104.95855026887" hd="8.6538461538462" hl="0.11555555555556" he="908.29514655754" ht="50.460841475419" hb="0.031262958514832" hi="12.128543586625" mi="63.765836740669"/>
+    </class>
+    <class name="CartModel" start="44" end="47" loc="4" cloc="0" eloc="0" lloc="0" ncloc="4" dit="2" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.2775" ca="1" cbo="0" ce="0" impl="0" cis="0" csz="0" npm="0" vars="0" varsi="0" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="/home/elisdn/oop/lesson04/02/demo09/cart/storage/YiiDbStorage.php"/>
+    </class>
+    <class name="YiiHybridStorage" start="7" end="37" loc="31" cloc="0" eloc="20" lloc="11" ncloc="31" dit="0" noam="0" nocc="0" noom="0" nom="3" cr="0.15" rcr="0.1755" ca="0" cbo="3" ce="3" impl="1" cis="3" csz="4" npm="3" vars="1" varsi="1" varsnp="0" wmc="5" wmci="5" wmcnp="5">
+      <file name="/home/elisdn/oop/lesson04/02/demo09/cart/storage/YiiHybridStorage.php"/>
+      <method name="__construct" start="11" end="26" ccn="3" ccn2="3" loc="16" cloc="0" eloc="14" lloc="9" ncloc="16" npath="3" hnt="24" hnd="50" hv="135.45254855459" hd="6.75" hl="0.14814814814815" he="914.30470274351" ht="50.794705707973" hb="0.031400703709706" hi="20.06704423031" mi="59.6680936049"/>
+      <method name="load" start="28" end="31" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="12.5" hl="0.08" he="193.87218755409" ht="10.770677086338" hb="0.011165780490257" hi="1.2407820003462" mi="81.120955834208"/>
+      <method name="save" start="33" end="36" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+    </class>
+    <class name="YiiSessionStorage" start="7" end="25" loc="19" cloc="0" eloc="9" lloc="3" ncloc="19" dit="0" noam="0" nocc="0" noom="0" nom="3" cr="0.15" rcr="0.1755" ca="1" cbo="1" ce="1" impl="1" cis="3" csz="4" npm="3" vars="1" varsi="1" varsnp="0" wmc="3" wmci="3" wmcnp="3">
+      <file name="/home/elisdn/oop/lesson04/02/demo09/cart/storage/YiiSessionStorage.php"/>
+      <method name="__construct" start="11" end="14" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+      <method name="load" start="16" end="19" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="9" hnd="9" hv="28.529325012981" hd="12.25" hl="0.081632653061224" he="349.48423140901" ht="19.415790633834" hb="0.016538538763157" hi="2.3289244908556" mi="79.267620989406"/>
+      <method name="save" start="21" end="24" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="8" hnd="8" hv="24" hd="4.1666666666667" hl="0.24" he="100" ht="5.5555555555556" hb="0.0071814489667729" hi="5.76" mi="79.793333921501"/>
+    </class>
+  </package>
+</metrics>
